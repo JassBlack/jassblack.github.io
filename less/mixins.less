@@ -1,0 +1,16 @@
+.font-style(@fs, @fw, @lh) {
+  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-size: @fs;
+  font-weight: @fw;
+  line-height: @lh;
+}
+
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+

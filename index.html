@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Superb t1m3R</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  </head>
+  <body class="body">
+  <main class="main">
+    <div class="container  timer">
+      <h1 class="timer__header">
+        Superb t1m3R
+      </h1>
+      <div class="timer__time  display">
+        <span class="display__output  display__output--hours">00</span>
+        <span class="display__colon">:</span>
+        <span class="display__output  display__output--minutes">00</span>
+        <span class="display__colon">:</span>
+        <span class="display__output  display__output--seconds">00</span>
+      </div>
+      <div class="timer__progress">
+        <div class="timer__progress-bar">
+          <span class="timer__progress-percent"></span>
+        </div>
+      </div>
+      <div class="timer__finish-time"></div>
+      <div class="timer__sound"  style="display: none">
+        <label for="sound-check" class="timer__label">Sound alert
+          <input id="sound-check" class="timer__checkbox" type="checkbox" name="sound"/>
+          <span class="timer__span"></span>
+        </label>    
+      </div>
+      <div class="modal" style="display: none">
+        <div class="modal__content">
+          <span class="modal__close">&times;</span>
+          <h2 class="modal__header">t1m3R DONE!</h2>
+        </div>
+      </div>
+      <div class="presets">
+        <div class="presets__item  presets__5">5</div>
+        <div class="presets__item  presets__10">10</div>
+        <div class="presets__item  presets__15">15</div>
+      </div>
+      <span class="timer__text">or custom time</span>
+      <form class="timer__custom  time-form">
+        <div class="time-form__inputs">
+          <input type="number" max="24" maxlength="2" class="time-form__input  time-form__input--hours" placeholder="00">
+          <span class="time-form__colon  time-form__colon--first">:</span>
+          <input type="number" max="59" class="time-form__input  time-form__input--minutes" placeholder="00">
+          <span class="time-form__colon  time-form__colon--first--second">:</span>
+          <input type="number" max="60" class="time-form__input  time-form__input--seconds" placeholder="00">
+        </div>
+        <button type="submit" class="time-form__button">Start</button>
+      </form>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+  </body>
+</html>

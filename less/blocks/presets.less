@@ -1,0 +1,53 @@
+.presets {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  padding-top: 0;
+
+  &__item {
+    background-color: #2eb341;
+    width: 80px;
+    height: 80px;
+    border-radius: 93px;
+    text-align: center;
+    line-height: 73px;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid white;
+  };
+  &__item:before {
+    content: "min";
+    width: 35px;
+    height: 25px;
+    position: absolute;
+    font-size: 13px;
+    top: 25px;
+    left: 23px;
+  };
+  &__item:active, &__item:focus {
+    border: 2px solid black;
+    border-radius: 100px;
+    outline: none;
+  };
+  &__item:hover {
+    background-color: #3ebc50;
+  };
+};
+
+@media (min-width : 768px) {
+  .presets {
+    width: 550px;
+    max-width: none;
+  };
+  .presets__item {
+    height: 93px;
+    width: 93px;
+  };
+  .presets__item:before {
+    font-size: 15px;
+    top: 28px;
+    left: 30px;
+  };
+}
