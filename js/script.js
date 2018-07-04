@@ -47,7 +47,7 @@ closeModalBtn.addEventListener('click', function (evt) {
 window.addEventListener('click', function (evt) {
   var modal = document.querySelector('.modal'); 
   if (evt.target == modal) {
-    modal.style.display = 'none';
+    closeModal();
   };
 });
 
@@ -180,7 +180,7 @@ function updateProgress(totalSeconds, secondsElapsed) {
   var progressPercent = document.querySelector('.timer__progress-percent');
   var progress = Math.floor(100 / (totalSeconds / secondsElapsed));
 
-  if (progress > 10) {
+  if (progress > 20) {
     progressPercent.style.right = '4px';
     progressPercent.style.color = 'white';
   };

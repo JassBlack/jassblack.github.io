@@ -473,6 +473,9 @@ input[type="number"] {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  width: 32px;
+  border: 2px solid;
+  border-radius: 32px;
 }
 .modal__close:hover,
 .modal__close:focus {
@@ -579,8 +582,9 @@ input[type="number"] {
   border-radius: 100px;
   outline: none;
 }
-.time-form__button:hover {
-  background-color: #3ebc50;
+.time-form__input:active,
+.time-form__input:focus {
+  outline: none;
 }
 .time-form__button--new-timer {
   background-color: black;
@@ -654,7 +658,7 @@ input[type="number"] {
   right: -46px;
   height: 25px;
   width: 25px;
-  border: 2px solid black;
+  border: 3px solid black;
 }
 .timer__span:after {
   content: "";
